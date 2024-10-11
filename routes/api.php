@@ -9,5 +9,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-
+// Taking Routes
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
