@@ -9,3 +9,6 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/fl/ag', [API::class, 'index']);
+
+
+Route::get('/fl/ag/{id}', [API::class, 'hardOne']);
