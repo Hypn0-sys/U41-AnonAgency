@@ -37,7 +37,7 @@ class API extends Controller
     }
 
     // Creating a function to give the secret
-    // Store in the .env file. For Debug I put the string : ForgetMe:CommitsNeverForget
+    // Store in the .env file.
     public function giveSec(Request $request) {
         $sec = $request->input('sec');
         if ($sec === env('SECRET_KEY')) {
